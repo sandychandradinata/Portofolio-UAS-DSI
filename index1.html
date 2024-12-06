@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Sandy</a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="p.png" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hai, Saya <span>Sandy</span></h1>
+            <h3 class="typing-text">Saya adalah seorang <span></span></h3>
+            <p>Hai! Saya Sandy Yusuf, software engineer pemula yang sedang belajar membuat aplikasi web. Sekarang saya masih kuliah di Politeknik Elektronika Negeri Surabaya dan sedang mempelajari HTML, CSS, JavaScript, serta teknologi modern seperti React dan Tailwind.
+                <br>
+            Menurut saya, teknologi itu bisa membuat hidup menjadi lebih mudah. Saya ingin sekali membuat solusi yang keren dan bermanfaat lewat coding. Ke depannya, saya ingin bergabung dengan tim yang seru dan bisa berkembang bersama-sama.
+               <br> 
+            Di luar coding, saya suka mantau teknologi terbaru, main game adventure, atau sekedar mendengarkan musik untuk bersantai.</p>
+        </div>
+    </section>
+
+    <div id="education" class="education">
+        <h1>Education</h1>
+        <div class="education-container">
+            <!-- Card 1 -->
+            <div class="education-card">
+                <h2>PJJ Teknik Informatika</h2>
+                <p><i class="fa-solid fa-calendar"></i> 2024 - Sekarang</p>
+                <p>Politeknik Elektronika Negeri Surabaya</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="education-card">
+                <h2>SMK Negeri 5 Malang</h2>
+                <p><i class="fa-solid fa-calendar"></i> 2024 - 2021</p>
+                <p>Malang</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="education-card">
+                <h2>SMP Annur </h2>
+                <p><i class="fa-solid fa-calendar"></i> 2021 - 2018</p>
+                <p>Bululawang</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience" class="experience">
+        <h1>Experience</h1>
+        <div class="experience-container">
+            <!-- Card 1 -->
+            <div class="experience-card">
+                <h2>Marketing Support</h2>
+                <p><i class="fa-solid fa-calendar"></i> Januari 2024 - Sekarang</p>
+                <p>PT Patra Sinergi Logistik</p>
+                <p>Sebagai Marketing Support, saya bertanggung jawab dalam memberikan dukungan yang komprehensif kepada tim pemasaran dalam berbagai aspek kegiatan pemasaran. </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="experience-card">
+                <h2>English Language Courses</h2>
+                <p><i class="fa-solid fa-calendar"></i> 2023</p>
+                <p>Indocita Foundation</p>
+                <p>Pengalaman kursus Bahasa Inggris di Indocita Foundation telah memberi saya fondasi yang kuat dalam Bahasa Inggris serta pengalaman belajar yang memuaskan dan berkesan.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <h1>Contact</h1>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/sandychandradinata"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/Sandyysfc?t=x0BVAhxIoWx6Dtt-DAg5Nw&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/sandyysfc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+        </div>    
+    </div>
+
+    
+    <footer>
+        <p>&copy; Created by <a href="https://sandy.chandradinata.com/" target="_blank">Sandy</a></p>
+    </footer>
+
+    <script>
+        // Ambil URL halaman saat ini
+        const currentPage = window.location.pathname;
+    
+        // Seleksi semua tautan dalam navbar
+        const navLinks = document.querySelectorAll("#navbar a");
+    
+        // Loop setiap tautan dan tambahkan class 'active' jika URL cocok
+        navLinks.forEach(link => {
+            if (link.href.includes(currentPage)) {
+                link.classList.add("active");
+            } else {
+                link.classList.remove("active");
+            }
+        });
+    </script>
+</body>
+</html>
